@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+    <title>Blog | Ujiro Energy Services</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ujiroenergyservices.com/blog" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog | Ujiro Energy Services" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ujiroenergyservices.com/blog" />
+    <meta property="og:image" content="/img/axgas-logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Ujiro Energy Services" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog | Ujiro Energy Services" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/img/axgas-logo.png" />
+
+    <!-- Preconnect hints -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- LCP image preload (page-specific, set by template via $heroPreloadWebp) -->
+
+    <meta name="theme-color" content="#1315DF" />
+    <link rel="icon" href="img/cropped-siteicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" href="img/axgas-logo.png" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /></noscript>
+  </head>
+  <body class="site-atmosphere min-h-screen text-gray-800 antialiased">
+    <!-- Skip to main content -->
+    <a
+      href="#main-content"
+      class="sr-only-text focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-brand-orange focus:text-white focus:rounded-lg focus:text-sm focus:font-semibold focus:shadow-lg"
+      style="
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      "
+      onfocus="this.removeAttribute('style')"
+      onblur="this.setAttribute('style','position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;')"
+    >
+      Skip to main content
+    </a>
+
+    <header>
+      <!-- Top contact bar -->
+
+      <!-- Navigation Bar -->
+      <nav
+        class="sticky top-0 z-50 border-b brand-hairline bg-brand-base/95 px-4 py-3 shadow-brand backdrop-blur-md md:px-6 lg:px-8 transition-all duration-300"
+        aria-label="Main navigation"
+      >
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4">
+          <div class="flex items-center">
+            <a href="index.html" aria-label="AXGAS home" class="block">
+              <img
+                src="img/axgas-logo.png"
+                alt="AXGAS – CNG Vehicle Conversion"
+                class="h-14 w-auto object-contain md:h-16 logo-image"
+              />
+            </a>
+          </div>
+          <ul
+            class="hidden md:flex items-center space-x-7 list-none m-0 p-0"
+            role="menubar"
+          >
+            <li role="none">
+              <a
+                href="index.html"
+                role="menuitem"
+                class="nav-link relative text-sm font-medium uppercase tracking-[0.18em] transition brand-link"
+                >Home</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="about.html"
+                role="menuitem"
+                class="nav-link relative text-sm font-medium uppercase tracking-[0.18em] transition brand-link"
+                >About</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="services.html"
+                role="menuitem"
+                class="nav-link relative text-sm font-medium uppercase tracking-[0.18em] transition brand-link"
+                >Services</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="projects.html"
+                role="menuitem"
+                class="nav-link relative text-sm font-medium uppercase tracking-[0.18em] transition brand-link"
+                >Projects</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="nav-link relative text-sm font-medium uppercase tracking-[0.18em] transition brand-link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div class="hidden md:block">
+            <a href="contact.html#quote-form" class="btn btn-primary">
+              Get a Quote
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden brand-panel flex h-11 w-11 items-center justify-center rounded-full text-white"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-black/60 z-50 hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation menu"
+    >
+      <div
+        class="absolute top-0 right-0 h-full w-72 brand-shell shadow-brand flex flex-col p-6 space-y-4 overflow-y-auto"
+      >
+        <div
+          class="flex items-center justify-between border-b brand-hairline pb-4"
+        >
+          <img
+            src="img/axgas-logo.png"
+            alt="AXGAS – CNG Vehicle Conversion"
+            class="h-12 w-auto object-contain logo-image"
+          />
+          <button
+            id="close-mobile-menu"
+            class="brand-panel flex h-10 w-10 items-center justify-center rounded-full text-white"
+            aria-label="Close navigation menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <nav aria-label="Mobile navigation">
+          <ul class="space-y-1 list-none m-0 p-0">
+            <li>
+              <a
+                href="index.html"
+                class="block border-b brand-hairline py-3 text-sm font-semibold uppercase tracking-[0.18em] brand-link"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block border-b brand-hairline py-3 text-sm font-semibold uppercase tracking-[0.18em] brand-link"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="block border-b brand-hairline py-3 text-sm font-semibold uppercase tracking-[0.18em] brand-link"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="block border-b brand-hairline py-3 text-sm font-semibold uppercase tracking-[0.18em] brand-link"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block border-b brand-hairline py-3 text-sm font-semibold uppercase tracking-[0.18em] brand-link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a href="contact.html#quote-form" class="btn btn-primary justify-center mt-4"
+          >Get a Quote</a
+        >
+      </div>
+    </div>
+
+    <main id="main-content" role="main">
+      <section
+        class="relative min-h-[40vh] flex items-center overflow-hidden"
+        aria-label="Blog hero"
+      >
+        <div class="absolute inset-0" aria-hidden="true">
+          <img
+            src="img/oil-platform-ocean-with-sun-setting-it.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-brand-base/90 via-brand-base/70 to-brand-orange/20"
+          ></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center py-20">
+          <p class="label-tag text-orange-300 mb-3 animate-fade-in-down">
+            Blog
+          </p>
+          <h1 class="heading-xl text-white mb-4 animate-fade-in-up">
+            Industry Insights &amp; News
+          </h1>
+          <p class="text-lg text-slate-200 max-w-2xl mx-auto">
+            Stay informed with the latest developments in oil and gas
+            engineering, wellhead technology, and operational best practices
+            from Ujiro Energy Services.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-pad bg-gray-50" aria-label="Blog articles">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article class="card overflow-hidden group">
+              <img
+                src="/img/blog/a2f7ce7a46b7611030b60ed1ba7739dd.jpg"
+                alt="Ujiro Energy Secures Major Wellhead Engineering Contract in the Niger Delta"
+                class="w-full h-48 object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span>Ujiro Energy</span>
+                  <span class="mx-2" aria-hidden="true">&middot;</span>
+                  <time datetime="2026-03-15 09:00:00">Mar 15, 2026</time>
+                </div>
+                <h2
+                  class="heading-sm mb-2 group-hover:text-brand-orange transition"
+                >
+                  <a href="/blog/ujiro-secures-major-wellhead-contract"
+                    >Ujiro Energy Secures Major Wellhead Engineering Contract in
+                    the Niger Delta</a
+                  >
+                </h2>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                  Ujiro Energy Services has been awarded a significant contract
+                  for the supply and installation of high-pressure wellheads
+                  across multiple locations in the Niger Delta, reinforcing our
+                  position as a trusted partner in upstream oil and gas
+                  operations.
+                </p>
+                <a
+                  href="/blog/ujiro-secures-major-wellhead-contract"
+                  class="text-brand-orange font-semibold text-sm inline-flex items-center hover:underline"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="card overflow-hidden group">
+              <div
+                class="w-full h-48 bg-gradient-to-br from-brand-orange to-orange-600 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-newspaper text-white text-4xl opacity-50"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span>Ujiro Energy</span>
+                  <span class="mx-2" aria-hidden="true">&middot;</span>
+                  <time datetime="2026-02-20 10:00:00">Feb 20, 2026</time>
+                </div>
+                <h2
+                  class="heading-sm mb-2 group-hover:text-brand-orange transition"
+                >
+                  <a href="/blog/critical-role-well-integrity-asset-life"
+                    >The Critical Role of Well Integrity in Extending Asset
+                    Life</a
+                  >
+                </h2>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                  Well integrity management is no longer optional — it is a
+                  regulatory and operational imperative. Learn how proactive
+                  integrity programs protect people, the environment, and your
+                  bottom line.
+                </p>
+                <a
+                  href="/blog/critical-role-well-integrity-asset-life"
+                  class="text-brand-orange font-semibold text-sm inline-flex items-center hover:underline"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="card overflow-hidden group">
+              <div
+                class="w-full h-48 bg-gradient-to-br from-brand-orange to-orange-600 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-newspaper text-white text-4xl opacity-50"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span>Ujiro Energy</span>
+                  <span class="mx-2" aria-hidden="true">&middot;</span>
+                  <time datetime="2026-01-10 08:30:00">Jan 10, 2026</time>
+                </div>
+                <h2
+                  class="heading-sm mb-2 group-hover:text-brand-orange transition"
+                >
+                  <a href="/blog/understanding-coiled-tubing-operations"
+                    >Understanding Coiled Tubing Operations: Applications and
+                    Advantages</a
+                  >
+                </h2>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                  Coiled tubing has become an essential tool for well
+                  intervention, cleanouts, stimulation, and completion
+                  operations. Here is a practical overview of how it works and
+                  when to deploy it.
+                </p>
+                <a
+                  href="/blog/understanding-coiled-tubing-operations"
+                  class="text-brand-orange font-semibold text-sm inline-flex items-center hover:underline"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="card overflow-hidden group">
+              <div
+                class="w-full h-48 bg-gradient-to-br from-brand-orange to-orange-600 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-newspaper text-white text-4xl opacity-50"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span>Ujiro Energy</span>
+                  <span class="mx-2" aria-hidden="true">&middot;</span>
+                  <time datetime="2025-12-05 11:00:00">Dec 5, 2025</time>
+                </div>
+                <h2
+                  class="heading-sm mb-2 group-hover:text-brand-orange transition"
+                >
+                  <a href="/blog/anti-theft-solutions-protect-wellhead-assets"
+                    >How Anti-Theft Solutions Protect Wellhead Assets and Reduce
+                    Operating Costs</a
+                  >
+                </h2>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                  Theft of wellhead components is a growing concern for
+                  operators in Nigeria. Purpose-designed anti-theft devices can
+                  dramatically reduce losses and improve operational continuity.
+                </p>
+                <a
+                  href="/blog/anti-theft-solutions-protect-wellhead-assets"
+                  class="text-brand-orange font-semibold text-sm inline-flex items-center hover:underline"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="card overflow-hidden group">
+              <div
+                class="w-full h-48 bg-gradient-to-br from-brand-orange to-orange-600 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-newspaper text-white text-4xl opacity-50"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span>Ujiro Energy</span>
+                  <span class="mx-2" aria-hidden="true">&middot;</span>
+                  <time datetime="2025-11-18 09:00:00">Nov 18, 2025</time>
+                </div>
+                <h2
+                  class="heading-sm mb-2 group-hover:text-brand-orange transition"
+                >
+                  <a
+                    href="/blog/safety-pressure-testing-instrumentation-calibration"
+                    >Ensuring Safety Through Pressure Testing, Instrumentation,
+                    and Calibration</a
+                  >
+                </h2>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                  Accurate pressure testing and properly calibrated instruments
+                  are the foundation of safe oil and gas operations. Learn about
+                  best practices and how Ujiro Energy delivers these critical
+                  services.
+                </p>
+                <a
+                  href="/blog/safety-pressure-testing-instrumentation-calibration"
+                  class="text-brand-orange font-semibold text-sm inline-flex items-center hover:underline"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="card overflow-hidden group">
+              <div
+                class="w-full h-48 bg-gradient-to-br from-brand-orange to-orange-600 flex items-center justify-center"
+              >
+                <i
+                  class="fas fa-newspaper text-white text-4xl opacity-50"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span>Ujiro Energy</span>
+                  <span class="mx-2" aria-hidden="true">&middot;</span>
+                  <time datetime="2025-10-22 10:00:00">Oct 22, 2025</time>
+                </div>
+                <h2
+                  class="heading-sm mb-2 group-hover:text-brand-orange transition"
+                >
+                  <a
+                    href="/blog/corrosion-protection-offshore-platforms-pipelines"
+                    >Corrosion Protection Strategies for Offshore Platforms and
+                    Pipelines</a
+                  >
+                </h2>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                  Corrosion is the single largest threat to the structural
+                  integrity of offshore assets. A well-designed cathodic
+                  protection and coating strategy can extend asset life by
+                  decades.
+                </p>
+                <a
+                  href="/blog/corrosion-protection-offshore-platforms-pipelines"
+                  class="text-brand-orange font-semibold text-sm inline-flex items-center hover:underline"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="mt-20 border-t brand-hairline bg-brand-base text-white pt-16"
+      role="contentinfo"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16"
+      >
+        <div>
+          <img
+            src="img/axgas-logo.png"
+            alt="AXGAS – CNG Vehicle Conversion"
+            class="h-20 w-auto object-contain md:h-24 logo-image"
+          />
+          <p class="mb-4 mt-5 text-sm brand-muted max-w-xl leading-7">
+            Crafted with care and precision to deliver dependable onshore and
+            offshore oil and gas services for operators across Nigeria.
+          </p>
+          <div class="flex space-x-3" role="list" aria-label="Social media">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              class="brand-panel flex h-11 w-11 items-center justify-center rounded-full brand-link transition"
+              role="listitem"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              class="brand-panel flex h-11 w-11 items-center justify-center rounded-full brand-link transition"
+              role="listitem"
+              ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="brand-panel flex h-11 w-11 items-center justify-center rounded-full brand-link transition"
+              role="listitem"
+              ><i class="fab fa-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="rounded-3xl border brand-hairline bg-gradient-to-br from-brand-panel to-brand-blue/80 p-4 md:p-8 shadow-brand w-full"
+        >
+          <p class="label-tag text-orange-300 text-[0.58rem] md:text-xs">
+            Start a conversation
+          </p>
+          <h3
+            class="mt-1.5 text-lg md:mt-3 md:heading-md text-white leading-snug"
+          >
+            Get a Free Quote Today
+          </h3>
+          <p
+            class="mt-2 text-[0.7rem] md:mt-3 md:text-sm brand-muted leading-4 md:leading-7"
+          >
+            Ready to start your next project? Our team of experts is here to
+            help you with your oil and gas service needs.
+          </p>
+          <a
+            href="contact.html#quote-form"
+            class="btn btn-primary mt-3 md:mt-6 text-[0.68rem] md:text-sm px-4 py-2.5 md:px-7 md:py-3"
+          >
+            Request a Quote
+            <svg
+              class="ml-1.5 h-3.5 w-3.5 md:ml-2 md:h-4 md:w-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-3 gap-8 pb-12"
+      >
+        <nav aria-label="Footer page links">
+          <h4 class="font-semibold text-lg mb-4 text-white">Pages</h4>
+          <ul class="space-y-2 text-sm brand-muted list-none p-0">
+            <li><a href="index.html" class="brand-link">Home</a></li>
+            <li><a href="about.html" class="brand-link">About Us</a></li>
+            <li><a href="services.html" class="brand-link">Solutions</a></li>
+            <li><a href="projects.html" class="brand-link">Projects</a></li>
+            <li><a href="contact.html" class="brand-link">Contact Us</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer quick links">
+          <h4 class="font-semibold text-lg mb-4 text-white">Quick Links</h4>
+          <ul class="space-y-2 text-sm brand-muted list-none p-0">
+            <li>
+              <a href="/certifications" class="brand-link">Certifications</a>
+            </li>
+            <li><a href="contact.html" class="brand-link">Contact</a></li>
+            <li><a href="/privacy" class="brand-link">Privacy Policy</a></li>
+            <li>
+              <a href="/terms" class="brand-link">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <h4 class="font-semibold text-lg mb-4 text-white">Contact Us</h4>
+          <ul class="space-y-3 text-sm brand-muted list-none p-0">
+            <li class="flex items-center space-x-2">
+              <span class="text-brand-orange" aria-hidden="true"
+                ><i class="fas fa-phone"></i
+              ></span>
+              <a href="tel:+2348037758271" class="brand-link"
+                >+234 803 775 8271</a
+              >
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-brand-orange" aria-hidden="true"
+                ><i class="fas fa-envelope"></i
+              ></span>
+              <a
+                href="/cdn-cgi/l/email-protection#1c75727a735c6976756e737972796e7b656f796e6a757f796f327f7371"
+                class="brand-link"
+                ><span
+                  class="__cf_email__"
+                  data-cfemail="4e272028210e3b24273c212b202b3c29373d2b3c38272d2b3d602d2123"
+                  >[email&#160;protected]</span
+                ></a
+              >
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="pt-0.5 text-brand-orange" aria-hidden="true"
+                ><i class="fas fa-location-dot"></i
+              ></span>
+              <span class="leading-6"
+                >Km 38 Airport Road behind Eterna Filling Station, Igwuruta,
+                Rivers State, Nigeria.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t brand-hairline text-center py-6 text-sm brand-muted-strong"
+      >
+        <p>&copy; 2026 Ujiro Energy Services. All rights reserved.</p>
+        <div class="mt-2">
+          <a href="/terms" class="brand-link">Terms &amp; Conditions</a>
+          <span class="mx-2">&middot;</span>
+          <a href="/privacy" class="brand-link">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-6 right-6 brand-panel text-white w-12 h-12 rounded-full shadow-brand flex items-center justify-center hover:bg-brand-orange hover:border-brand-orange transition-opacity duration-150 opacity-0 pointer-events-none z-50"
+      aria-label="Back to top"
+      style="touch-action: manipulation"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <script
+      data-cfasync="false"
+      src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="js/app.js?v=1777310397"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ujiro Energy Services",
+        "url": "ujiroenergyservices.com",
+        "logo": "/img/cropped-siteicon-32x32.png",
+        "description": "Innovative onshore and offshore oil and gas solutions provider in Nigeria.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Airport Rd, Igwuruta",
+          "addressLocality": "Port Harcourt",
+          "addressRegion": "Rivers",
+          "postalCode": "511101",
+          "addressCountry": "NG"
+        },
+        "telephone": "+2348037758271",
+        "email": "info@ujiroenergyservices.com",
+        "sameAs": [
+          "https://www.facebook.com/",
+          "https://www.linkedin.com/",
+          "https://www.instagram.com/"
+        ]
+      }
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+      integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+      data-cf-beacon='{"version":"2024.11.0","token":"353d3a35ebb44f5a81e63a8932fc430c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
