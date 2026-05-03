@@ -114,4 +114,81 @@ foreach ($htmlFiles as $file) {
     echo "</ul>";
 }
 
+// Admin Dashboard Functions and Authentication Codes
+
+// Function to authenticate admin login
+function authenticateAdmin($username, $password) {
+    // Replace with actual database connection and query
+    $adminCredentials = [
+        'admin' => 'password123', // Example credentials
+    ];
+
+    if (isset($adminCredentials[$username]) && $adminCredentials[$username] === $password) {
+        session_start();
+        $_SESSION['admin_logged_in'] = true;
+        return true;
+    }
+    return false;
+}
+
+// Function to check if admin is logged in
+function isAdminLoggedIn() {
+    session_start();
+    return isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true;
+}
+
+// Function to log out admin
+function logoutAdmin() {
+    session_start();
+    session_unset();
+    session_destroy();
+}
+
+// Function to display admin dashboard
+function displayAdminDashboard() {
+    if (!isAdminLoggedIn()) {
+        echo "<p>Access denied. Please log in as an admin.</p>";
+        return;
+    }
+
+    echo "<h1>Welcome to the Admin Dashboard</h1>";
+    echo "<ul>";
+    echo "<li><a href='manage_users.php'>Manage Users</a></li>";
+    echo "<li><a href='view_reports.php'>View Reports</a></li>";
+    echo "<li><a href='settings.php'>Settings</a></li>";
+    echo "<li><a href='logout.php'>Log Out</a></li>";
+    echo "</ul>";
+}
+
+// Example usage
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
+    if ($_POST['action'] === 'login') {
+        $username = $_POST['username'] ?? '';
+        $password = $_POST['password'] ?? '';
+        if (authenticateAdmin($username, $password)) {
+            echo "<p>Login successful!</p>";
+        } else {
+            echo "<p>Invalid credentials. Please try again.</p>";
+        }
+    } elseif ($_POST['action'] === 'logout') {
+        logoutAdmin();
+        echo "<p>You have been logged out.</p>";
+    }
+}
+
+// Display the dashboard
+if (isAdminLoggedIn()) {
+    displayAdminDashboard();
+} else {
+    echo "<form method='POST'>";
+    echo "<h2>Admin Login</h2>";
+    echo "<label for='username'>Username:</label><br>";
+    echo "<input type='text' id='username' name='username'><br><br>";
+    echo "<label for='password'>Password:</label><br>";
+    echo "<input type='password' id='password' name='password'><br><br>";
+    echo "<input type='hidden' name='action' value='login'>";
+    echo "<button type='submit'>Login</button>";
+    echo "</form>";
+}
+
 ?>
