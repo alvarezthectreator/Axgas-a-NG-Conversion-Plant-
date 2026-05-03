@@ -1,0 +1,188 @@
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+.heart-dot {
+  background-color: black;
+  animation: heartBeat 1s infinite;
+  transition: background-color 0.3s ease;
+}
+
+.heart-dot:hover {
+  background-color: orange;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.float-in-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.float-in-left-slow {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+.float-in-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.in-view-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.in-view-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+}
+
+.animate-beat-shake {
+  animation: heartBeat 1.5s ease-in-out, shake 0.6s ease-in-out 1.6s infinite;
+}
+
+/* Simple fade-in animations */
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-fade-in-down {
+  animation: fade-in-down 1s ease;
+}
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease;
+}
+.animate-fade-in-left {
+  animation: fade-in-left 1s ease;
+}
+
+/* Prefers reduced motion: disable all animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* General Improvements */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Logo utility */
+.logo-image {
+  width: auto;
+  height: 4.15rem;
+  max-height: 4rem;
+}
+
+/* Loading Experience */
+#preloader {
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s;
+}
+#preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #f57c00;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
